@@ -9,4 +9,4 @@ for line in sys.stdin:
     temperature = line[87:92]
     quality = line[92]
     if temperature != '9999' and quality in valid_set:
-        print('%s\t%d' % (line[15:23], temperature))
+        print('%s\t%s' % (line[15:23], temperature))
